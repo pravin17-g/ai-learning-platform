@@ -1,0 +1,271 @@
+{
+  "proficiency_scale": {
+    "0": "No knowledge",
+    "1": "Beginner",
+    "2": "Basic",
+    "3": "Intermediate",
+    "4": "Advanced",
+    "5": "Expert"
+  },
+  "careers": {
+    "Full Stack Developer": {
+      "skills": [
+        {
+          "name": "HTML & CSS",
+          "target_level": 3,
+          "prerequisites": [],
+          "estimated_hours": 20,
+          "learning_objectives": [
+            {"level": 1, "text": "Write semantic HTML pages with headings, links, images and forms"},
+            {"level": 2, "text": "Style layouts with CSS selectors, the box model, flexbox and grid"},
+            {"level": 3, "text": "Build responsive, accessible pages using media queries"}
+          ],
+          "resource": {"title": "MDN: Learn web development", "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development"}
+        },
+        {
+          "name": "JavaScript",
+          "target_level": 4,
+          "prerequisites": ["HTML & CSS"],
+          "estimated_hours": 40,
+          "learning_objectives": [
+            {"level": 1, "text": "Use variables, data types, control flow and functions"},
+            {"level": 2, "text": "Work with arrays, objects, the DOM and events"},
+            {"level": 3, "text": "Write asynchronous code with promises, async/await and fetch"},
+            {"level": 4, "text": "Organize code with modules and handle errors robustly"}
+          ],
+          "resource": {"title": "MDN: JavaScript Guide", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"}
+        },
+        {
+          "name": "Git & Version Control",
+          "target_level": 3,
+          "prerequisites": [],
+          "estimated_hours": 8,
+          "learning_objectives": [
+            {"level": 1, "text": "Create repositories and make commits"},
+            {"level": 2, "text": "Create, merge and delete branches"},
+            {"level": 3, "text": "Use remotes, pull requests and resolve merge conflicts"}
+          ],
+          "resource": {"title": "Pro Git (official book)", "url": "https://git-scm.com/book/en/v2"}
+        },
+        {
+          "name": "React",
+          "target_level": 4,
+          "prerequisites": ["JavaScript"],
+          "estimated_hours": 35,
+          "learning_objectives": [
+            {"level": 1, "text": "Build components with JSX"},
+            {"level": 2, "text": "Manage props, state and events"},
+            {"level": 3, "text": "Use effects, fetch data and build controlled forms"},
+            {"level": 4, "text": "Apply context, custom hooks and basic performance techniques"}
+          ],
+          "resource": {"title": "React: Learn", "url": "https://react.dev/learn"}
+        },
+        {
+          "name": "Python",
+          "target_level": 3,
+          "prerequisites": [],
+          "estimated_hours": 30,
+          "learning_objectives": [
+            {"level": 1, "text": "Write Python syntax, variables and control flow"},
+            {"level": 2, "text": "Use functions, modules and core data structures"},
+            {"level": 3, "text": "Apply OOP, file I/O and virtual environments"}
+          ],
+          "resource": {"title": "The Python Tutorial (official)", "url": "https://docs.python.org/3/tutorial/"}
+        },
+        {
+          "name": "SQL & Databases",
+          "target_level": 3,
+          "prerequisites": [],
+          "estimated_hours": 20,
+          "learning_objectives": [
+            {"level": 1, "text": "Create tables and run SELECT queries"},
+            {"level": 2, "text": "Use joins, grouping and aggregate functions"},
+            {"level": 3, "text": "Design normalized schemas with keys and constraints"}
+          ],
+          "resource": {"title": "PostgreSQL Official Tutorial", "url": "https://www.postgresql.org/docs/current/tutorial.html"}
+        },
+        {
+          "name": "REST API Development",
+          "target_level": 4,
+          "prerequisites": ["Python", "SQL & Databases"],
+          "estimated_hours": 30,
+          "learning_objectives": [
+            {"level": 1, "text": "Explain HTTP methods, status codes and REST conventions"},
+            {"level": 2, "text": "Build path, query and body endpoints with FastAPI"},
+            {"level": 3, "text": "Add request validation and database integration"},
+            {"level": 4, "text": "Implement authentication, error handling and automated tests"}
+          ],
+          "resource": {"title": "FastAPI Tutorial (official)", "url": "https://fastapi.tiangolo.com/tutorial/"}
+        }
+      ]
+    },
+    "Data Analyst": {
+      "skills": [
+        {
+          "name": "Python",
+          "target_level": 3,
+          "prerequisites": [],
+          "estimated_hours": 30,
+          "learning_objectives": [
+            {"level": 1, "text": "Write Python syntax, variables and control flow"},
+            {"level": 2, "text": "Use functions, modules and core data structures"},
+            {"level": 3, "text": "Read and write files and use virtual environments"}
+          ],
+          "resource": {"title": "The Python Tutorial (official)", "url": "https://docs.python.org/3/tutorial/"}
+        },
+        {
+          "name": "SQL & Databases",
+          "target_level": 4,
+          "prerequisites": [],
+          "estimated_hours": 35,
+          "learning_objectives": [
+            {"level": 1, "text": "Create tables and run SELECT queries"},
+            {"level": 2, "text": "Use joins, grouping and aggregate functions"},
+            {"level": 3, "text": "Write subqueries and common table expressions"},
+            {"level": 4, "text": "Use window functions and optimize analytical queries"}
+          ],
+          "resource": {"title": "PostgreSQL Official Tutorial", "url": "https://www.postgresql.org/docs/current/tutorial.html"}
+        },
+        {
+          "name": "Statistics & Probability",
+          "target_level": 3,
+          "prerequisites": [],
+          "estimated_hours": 30,
+          "learning_objectives": [
+            {"level": 1, "text": "Compute and interpret mean, median and standard deviation"},
+            {"level": 2, "text": "Understand distributions and probability basics"},
+            {"level": 3, "text": "Run confidence intervals and hypothesis tests"}
+          ],
+          "resource": {"title": "Khan Academy: Statistics and Probability", "url": "https://www.khanacademy.org/math/statistics-probability"}
+        },
+        {
+          "name": "Data Cleaning with pandas",
+          "target_level": 4,
+          "prerequisites": ["Python"],
+          "estimated_hours": 25,
+          "learning_objectives": [
+            {"level": 1, "text": "Load data into DataFrames and inspect it"},
+            {"level": 2, "text": "Select, filter and sort rows and columns"},
+            {"level": 3, "text": "Handle missing values, duplicates and type conversions"},
+            {"level": 4, "text": "Merge, reshape and group data efficiently"}
+          ],
+          "resource": {"title": "pandas: 10 minutes to pandas", "url": "https://pandas.pydata.org/docs/user_guide/10min.html"}
+        },
+        {
+          "name": "Data Visualization",
+          "target_level": 3,
+          "prerequisites": ["Python", "Data Cleaning with pandas"],
+          "estimated_hours": 20,
+          "learning_objectives": [
+            {"level": 1, "text": "Create basic line, bar and scatter plots"},
+            {"level": 2, "text": "Customize labels, scales, legends and subplots"},
+            {"level": 3, "text": "Choose the right chart type to communicate findings"}
+          ],
+          "resource": {"title": "Matplotlib Quick Start Guide", "url": "https://matplotlib.org/stable/users/explain/quick_start.html"}
+        },
+        {
+          "name": "Exploratory Data Analysis",
+          "target_level": 3,
+          "prerequisites": ["Statistics & Probability", "Data Cleaning with pandas"],
+          "estimated_hours": 20,
+          "learning_objectives": [
+            {"level": 1, "text": "Summarize datasets with descriptive statistics"},
+            {"level": 2, "text": "Find distributions, outliers and correlations"},
+            {"level": 3, "text": "Form and test hypotheses and document insights"}
+          ],
+          "resource": {"title": "pandas User Guide", "url": "https://pandas.pydata.org/docs/user_guide/index.html"}
+        }
+      ]
+    },
+    "AI/ML Engineer": {
+      "skills": [
+        {
+          "name": "Python",
+          "target_level": 4,
+          "prerequisites": [],
+          "estimated_hours": 40,
+          "learning_objectives": [
+            {"level": 1, "text": "Write Python syntax, variables and control flow"},
+            {"level": 2, "text": "Use functions, modules and core data structures"},
+            {"level": 3, "text": "Apply OOP, file I/O and virtual environments"},
+            {"level": 4, "text": "Write tests, use decorators/generators and profile code"}
+          ],
+          "resource": {"title": "The Python Tutorial (official)", "url": "https://docs.python.org/3/tutorial/"}
+        },
+        {
+          "name": "Linear Algebra",
+          "target_level": 3,
+          "prerequisites": [],
+          "estimated_hours": 25,
+          "learning_objectives": [
+            {"level": 1, "text": "Work with vectors and matrices"},
+            {"level": 2, "text": "Perform matrix multiplication and understand linear transformations"},
+            {"level": 3, "text": "Understand eigenvalues, eigenvectors and decompositions"}
+          ],
+          "resource": {"title": "Khan Academy: Linear Algebra", "url": "https://www.khanacademy.org/math/linear-algebra"}
+        },
+        {
+          "name": "Statistics & Probability",
+          "target_level": 3,
+          "prerequisites": [],
+          "estimated_hours": 30,
+          "learning_objectives": [
+            {"level": 1, "text": "Compute and interpret descriptive statistics"},
+            {"level": 2, "text": "Understand distributions and conditional probability"},
+            {"level": 3, "text": "Apply Bayes' rule and hypothesis testing"}
+          ],
+          "resource": {"title": "Khan Academy: Statistics and Probability", "url": "https://www.khanacademy.org/math/statistics-probability"}
+        },
+        {
+          "name": "NumPy & pandas",
+          "target_level": 3,
+          "prerequisites": ["Python"],
+          "estimated_hours": 20,
+          "learning_objectives": [
+            {"level": 1, "text": "Create and index NumPy arrays and pandas DataFrames"},
+            {"level": 2, "text": "Use vectorized operations and broadcasting"},
+            {"level": 3, "text": "Clean, group and transform datasets for modelling"}
+          ],
+          "resource": {"title": "NumPy: Absolute Beginners Guide", "url": "https://numpy.org/doc/stable/user/absolute_beginners.html"}
+        },
+        {
+          "name": "Machine Learning Fundamentals",
+          "target_level": 4,
+          "prerequisites": ["Python", "Statistics & Probability", "Linear Algebra", "NumPy & pandas"],
+          "estimated_hours": 45,
+          "learning_objectives": [
+            {"level": 1, "text": "Explain supervised vs unsupervised learning"},
+            {"level": 2, "text": "Train linear/logistic regression models"},
+            {"level": 3, "text": "Use decision trees, ensembles and clustering with scikit-learn"},
+            {"level": 4, "text": "Build full pipelines with feature engineering and regularization"}
+          ],
+          "resource": {"title": "Google Machine Learning Crash Course", "url": "https://developers.google.com/machine-learning/crash-course"}
+        },
+        {
+          "name": "Model Evaluation & Tuning",
+          "target_level": 3,
+          "prerequisites": ["Machine Learning Fundamentals"],
+          "estimated_hours": 20,
+          "learning_objectives": [
+            {"level": 1, "text": "Split data into train/validation/test sets"},
+            {"level": 2, "text": "Choose metrics such as precision, recall, F1 and RMSE"},
+            {"level": 3, "text": "Use cross-validation and hyperparameter search"}
+          ],
+          "resource": {"title": "scikit-learn: Model evaluation", "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"}
+        },
+        {
+          "name": "Deep Learning",
+          "target_level": 3,
+          "prerequisites": ["Machine Learning Fundamentals", "Linear Algebra"],
+          "estimated_hours": 40,
+          "learning_objectives": [
+            {"level": 1, "text": "Understand neurons, layers and backpropagation"},
+            {"level": 2, "text": "Build and train feed-forward networks in PyTorch"},
+            {"level": 3, "text": "Train CNNs and handle overfitting"}
+          ],
+          "resource": {"title": "PyTorch Tutorials", "url": "https://pytorch.org/tutorials/"}
+        }
+      ]
+    }
+  }
+}
